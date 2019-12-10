@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="Cache-Control" content="no-transform">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<meta name="applicable-device" content="mobile">
+		<title>相册</title>
+		<!--<script src="//static.haokecheng.com/js/uaredirect.js" type="text/javascript"></script>
+		<script type="text/javascript">pcredirect("");</script>-->
+		<script type='application/javascript' src="https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/m-reset.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/plugin.css" />
+	</head>
+	<body>
+		
+		<h3 class="jgphoto-common-title">相册</h3>
+		<div class="m-photo-outer m-list-container">
+			<div class="m-watch-big-photo jgdet-pop-photo">
+				<div class="swiper-container">
+					<dl class="jgdet-photo-list clearfloat swiper-wrapper">
+						<dd data-swiper-slide-index="0" class="swiper-slide" >
+							<div class="swiper-zoom-container">
+								<img src="//img.jiaoyubao.cn/2014/20190329145006940-20190329145358326.JPG" alt="" />
+							</div>
+						</dd>
+						<dd data-swiper-slide-index="1" class="swiper-slide" >
+							<div class="swiper-zoom-container">
+								<img src="https://img.jiaoyubao.cn/2014/20190329150324689-20190329150412978.png" alt="" />
+							</div>
+						</dd>
+						<dd data-swiper-slide-index="2" class="swiper-slide" >
+							<div class="swiper-zoom-container">
+								<img src="https://img.jiaoyubao.cn/2014/20190322170226055-20190329150910849.jpg" alt="" />
+							</div>
+						</dd>
+						<dd data-swiper-slide-index="3" class="swiper-slide" >
+							<div class="swiper-zoom-container" >
+								<img src="https://img.jiaoyubao.cn/2014/20190329151309311-20190329151322829.jpg" alt="" />
+							</div>
+						</dd>
+						<dd data-swiper-slide-index="4" class="swiper-slide" >
+							<div class="swiper-zoom-container">
+								<img src="https://img.jiaoyubao.cn/2014/20190322170226055-20190329150910849.jpg" alt="" />
+							</div>
+						</dd>
+						<dd data-swiper-slide-index="5" class="swiper-slide" >
+							<div class="swiper-zoom-container" >
+								<img src="https://img.jiaoyubao.cn/2014/20190329151309311-20190329151322829.jpg" alt="" />
+							</div>
+						</dd>
+					</dl>
+					<!-- Add Pagination -->
+		            <div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	
+	
+		<script src="js/jquery.min.1.11.1.js" charset="utf-8" ></script>
+		<script src="js/common.js" charset="utf-8"></script>
+		<script src="js/swiper.min.js" charset="utf-8"></script>
+		<script>
+			//相册查看大图&评价图片查看大图
+			$(document).on("click",".jgdet-pop-photo .swiper-slide",function(){
+		        $.jybWatchBigPic(this, true);
+		    })
+		</script>
+	</body>
+</html>
